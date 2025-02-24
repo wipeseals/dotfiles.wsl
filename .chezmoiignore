@@ -1,0 +1,8 @@
+{{ if ne .chezmoi.os "windows" }}
+AppData\Roaming\Code\User\keybindings.json
+AppData\Roaming\Code\User\settings.json
+{{ end }}
+{{ if ne .chezmoi.os "linux" }}
+./.config/Code/User/keybindings.json
+./.config/Code/User/settings.json
+{{ end }}

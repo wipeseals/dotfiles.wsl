@@ -1,0 +1,85 @@
+{
+    "editor.suggestSelection": "first",
+    "workbench.colorTheme": "Winter is Coming (Dark Blue - No Italics)",
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "debug.onTaskErrors": "showErrors",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "remote.SSH.remotePlatform": {
+        "172.27.199.42": "linux",
+        "192.168.1.5": "linux",
+        "azarashino": "linux"
+    },
+    "editor.stickyScroll.enabled": true,
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "workbench.startupEditor": "none",
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "search.useIgnoreFiles": false,
+    "jupyter.askForKernelRestart": false,
+    "notebook.output.scrolling": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "git.defaultBranchName": "master",
+    "github.copilot.advanced": {},
+    "github.copilot.chat.terminalChatLocation": "quickChat",
+    "git.confirmSync": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "editor.fontFamily": "HackGen35",
+    "gitlens.views.worktrees.files.layout": "list",
+    "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+    "rust-analyzer.check.command": "clippy",
+    "github.copilot.chat.localeOverride": "ja",
+    "hediet.vscode-drawio.resizeImages": null,
+    "markdown.marp.themes": [
+        ""
+    ],
+    "files.autoSave": "afterDelay",
+    "gitlens.home.preview.enabled": false,
+    "github.copilot.enable": {
+        "markdown": true,
+        "plaintext": true
+    },
+}

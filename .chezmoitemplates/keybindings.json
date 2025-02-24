@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.splitEditorOrthogonal"
+    },
+    {
+        "key": "ctrl+k ctrl+\\",
+        "command": "-workbench.action.splitEditorOrthogonal"
+    },
+    {
+        "key": "f1",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    }
+]
