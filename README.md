@@ -1,9 +1,12 @@
 # dotfiles
 
 
-## install
+## Install
 
-<https://nix-community.github.io/NixOS-WSL/install.html>
+Reference
+
+- [Installation - NixOS-WSL](https://nix-community.github.io/NixOS-WSL/install.html)
+- [WSL2 で NixOS する - Zenn](https://zenn.dev/kino_ma/articles/3eeb711be6fcbb)
 
 ```bat
 > mkdir path/to/nixos_wsl_workdir
@@ -22,8 +25,15 @@ docker-desktop-data
 docker-desktop
 NixOS # <- here
 
-# NixOS を起動
+# NixOS を起動 + 初期設定
 > wsl -d NixOS
+$ sudo nix-channel --add https://nixos.org/channels/nixos-24.11 nixos
+$ sudo nix-channel --update
+$ sudo nixos-rebuild switch
+
+# 動作確認
+$ nix-shell -p neofetch
+$ neofetch
 ```
 
 
