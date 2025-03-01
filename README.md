@@ -51,7 +51,7 @@ $ sudo ln -s /full/path/to/dotfiles/configuration.nix /etc/nixos/configuration.n
 $ sudo nixos-rebuild switch
 ```
 
-### dotfiles/devbox
+### home-manager
 
 `/home/user` にシンボリックリンクを貼る (もしくは repo の内容をばらまく)
 
@@ -65,6 +65,6 @@ drwx---r-x 20 root root  4096 Mar  1 15:44 ..
 drwx------  4 user users 4096 Mar  1 15:29 nixos
 lrwxrwxrwx  1 root root    25 Mar  1 15:57 user -> /mnt/e/repos/dotfiles/
 
-# 以後 devbox の Shell に入るときはこれ
-$ devbox shell
+# 以後 home-manager の変更後はこれで再ビルド
+$ home-manager switch
 ```

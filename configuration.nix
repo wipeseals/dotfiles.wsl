@@ -14,6 +14,12 @@
         experimental-features = nix-command flakes
     '';
     environment.systemPackages = with pkgs; [
+        fish
+        git
+        curl
+        wget
+        vim
+        home-manager
         devbox
     ];
 }
