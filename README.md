@@ -68,3 +68,14 @@ lrwxrwxrwx  1 root root    25 Mar  1 15:57 user -> /mnt/e/repos/dotfiles/
 # 以後 home-manager の変更後はこれで再ビルド
 $ home-manager switch
 ```
+
+## Tips
+
+### WSL2 の再起動をしたい
+
+shutdown cmd で WSL2 を停止して、再度起動する
+
+```bash
+> wsl --shutdown NixOS
+> wsl -d NixOS
+```
