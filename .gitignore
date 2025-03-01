@@ -7,4 +7,5 @@
 !/configuration.nix
 !/.gitconfig
 !/.gitignore
-!/.config/home-manager/home.nix
+!/devbox.json
+!/devbox.lock
