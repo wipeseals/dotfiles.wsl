@@ -1,0 +1,10 @@
+# default ignored
+*
+!*/
+
+# allow specific files
+!/README
+!/configuration.nix
+!/.gitconfig
+!/.gitignore
+!/.config/home-manager/home.nix
