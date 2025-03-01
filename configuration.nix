@@ -20,6 +20,5 @@
         wget
         vim
         home-manager
-        devbox
     ];
 }
