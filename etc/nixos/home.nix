@@ -18,10 +18,14 @@
 
   programs = {
     home-manager.enable = true;
+    fish.enable = true;
     git = {
       enable = true;
       userName = "wipeseals";
       userEmail = "wipeseals@gmail.com";
     };
+  };
+  users.users.nixos = {
+    shell = pkgs.fish;
   };
 }
