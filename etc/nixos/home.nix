@@ -8,22 +8,25 @@
         # altenative tools
         ripgrep # grep replacement
         bat # cat replacement
-        fzf # fuzzy finder
         fd # replacement for find
+        eza # replacement for ls
 
         # shell/env tools
+        starship # shell prompt
         tmux
         byobu
 
         # dev tools
+        fzf # fuzzy finder
         direnv # environment variable manager
         gh # github cli
+        lazygit # git tui
     ];
     stateVersion = "24.11";
 
-    # symlink貼る場合はここに書く
-    # file = {
-    # }
+    file = {
+      # ".config".source = ./.config;
+    };
   };
 
   programs = {
@@ -39,7 +42,7 @@
     };
     gh = {
       enable = true;
-      editor = "vim";
+      settings.editor = "vim";
     };
   };
 }
