@@ -5,14 +5,6 @@
     username = "nixos";
     homeDirectory = "/home/nixos";
       packages = with pkgs; [
-        (pkgs.python3.withPackages (ppkgs: [
-          ppkgs.pip
-          ppkgs.uv
-          ppkgs.ruff
-          ppkgs.mypy
-          ppkgs.pytest
-          ppkgs.rich
-        ]))
     ];
     stateVersion = "24.11";
 
