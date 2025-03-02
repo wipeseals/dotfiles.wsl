@@ -5,8 +5,6 @@
     username = "nixos";
     homeDirectory = "/home/nixos";
       packages = with pkgs; [
-        # shell
-        fish
         # altenative tools
         ripgrep # grep replacement
         bat # cat replacement
@@ -18,14 +16,10 @@
 
   programs = {
     home-manager.enable = true;
-    fish.enable = true;
     git = {
       enable = true;
       userName = "wipeseals";
       userEmail = "wipeseals@gmail.com";
     };
-  };
-  users.users.nixos = {
-    shell = pkgs.fish;
   };
 }
