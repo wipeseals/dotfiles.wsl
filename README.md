@@ -34,12 +34,21 @@ $ neofetch
 
 ## Install dotfiles
 
+dotfiles の取得
+
 ```bash
 $ cd ~ && git clone https://github.com/wipeseals/dotfiles.git
 
 # 別の場所にcloneしてシンボリックリンクを貼る場合
 $ git clone https://github.com/wipeseals/dotfiles.git /path/to/dotfiles
 $ ln -s /path/to/dotfiles/ ~
+```
+
+`/etc/nixos/` の差し替え
+
+```bash
+$ sudo rm -r /etc/nixos/
+$ sudo ln -s ~/dotfiles/etc/nixos/ /etc/nixos
 ```
 
 ### NixOS
@@ -70,3 +79,4 @@ shutdown cmd で WSL2 を停止して、再度起動する
 - [Installation - NixOS-WSL](https://nix-community.github.io/NixOS-WSL/install.html)
 - [WSL2 で NixOS する - Zenn](https://zenn.dev/kino_ma/articles/3eeb711be6fcbb)
 - [NixOS で最強のデスクトップを作ろう - Zenn](https://zenn.dev/asa1984/articles/nixos-is-the-best#home-manager)
+- [nixos 入門 1: wsl で使う nixos (Linux 初心者のための究極な OS)](https://zenn.dev/tositada/books/1c1564531ec8fc)
