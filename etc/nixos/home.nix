@@ -11,6 +11,10 @@
         fzf # fuzzy finder
         fd # replacement for find
 
+        # shell/env tools
+        tmux
+        byobu
+
         # dev tools
         direnv # environment variable manager
         gh # github cli
