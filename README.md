@@ -59,7 +59,10 @@ $ sudo ln -s ~/dotfiles/etc/nixos/ /etc/nixos
 $ sudo rm /etc/nixos/configuration.nix
 $ sudo ln -s /full/path/to/dotfiles/configuration.nix /etc/nixos/configuration.nix
 
-# 以後 configuration.nix の変更後はこれで再ビルド
+# 初回だけはgitが必要. hotfix用にvimも持っておく
+$ sudo nix-shell -p git vim
+
+# nixos build. (以後 configuration.nix の変更後はこれで再ビルド)
 $ sudo nixos-rebuild switch
 ```
 

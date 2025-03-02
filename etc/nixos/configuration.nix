@@ -1,6 +1,12 @@
 { config, lib, pkgs, ... }:
 
 {
+  nix = {
+    settings = { 
+      auto-optimise-store = true;
+      experimental-features = [ "nix-command" "flakes" ];
+    };
+  };
   environment.systemPackages = with pkgs; [
     git
     vim
