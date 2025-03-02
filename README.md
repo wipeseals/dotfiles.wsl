@@ -2,11 +2,6 @@
 
 ## Install NixOS-WSL
 
-Reference
-
-- [Installation - NixOS-WSL](https://nix-community.github.io/NixOS-WSL/install.html)
-- [WSL2 で NixOS する - Zenn](https://zenn.dev/kino_ma/articles/3eeb711be6fcbb)
-
 ```bat
 # Virtual Disk置き場
 > mkdir path/to/nixos_wsl_workdir
@@ -39,34 +34,24 @@ $ neofetch
 
 ## Install dotfiles
 
+```bash
+$ cd ~ && git clone https://github.com/wipeseals/dotfiles.git
+
+# 別の場所にcloneしてシンボリックリンクを貼る場合
+$ git clone https://github.com/wipeseals/dotfiles.git /path/to/dotfiles
+$ ln -s /path/to/dotfiles/ ~
+```
+
 ### NixOS
 
 `/etc/nixos/configuration.nix` を差し替える。 configuration.nix を削除して、本リポジトリの configuration.nix をシンボリックリンクで置く
 
 ```bash
 $ sudo rm /etc/nixos/configuration.nix
-$ sudo ln -s /full/path/to/dotfiles/configuration.nix /etc/nixos/configuration.ni
+$ sudo ln -s /full/path/to/dotfiles/configuration.nix /etc/nixos/configuration.nix
 
 # 以後 configuration.nix の変更後はこれで再ビルド
 $ sudo nixos-rebuild switch
-```
-
-### home-manager
-
-`/home/user` にシンボリックリンクを貼る (もしくは repo の内容をばらまく)
-
-```bash
-$ sudo rm -r /home/user
-$ sudo ln -s /mnt/e/repos/dotfiles/ /home/user
-$ ls -al /home
-total 12
-drwxr-xr-x  3 root root  4096 Mar  1 15:57 .
-drwx---r-x 20 root root  4096 Mar  1 15:44 ..
-drwx------  4 user users 4096 Mar  1 15:29 nixos
-lrwxrwxrwx  1 root root    25 Mar  1 15:57 user -> /mnt/e/repos/dotfiles/
-
-# 以後 home-manager の変更後はこれで再ビルド
-$ home-manager switch
 ```
 
 ## Tips
@@ -79,3 +64,9 @@ shutdown cmd で WSL2 を停止して、再度起動する
 > wsl --shutdown NixOS
 > wsl -d NixOS
 ```
+
+## Reference
+
+- [Installation - NixOS-WSL](https://nix-community.github.io/NixOS-WSL/install.html)
+- [WSL2 で NixOS する - Zenn](https://zenn.dev/kino_ma/articles/3eeb711be6fcbb)
+- [NixOS で最強のデスクトップを作ろう - Zenn](https://zenn.dev/asa1984/articles/nixos-is-the-best#home-manager)

@@ -7,7 +7,7 @@
     ];
 
     wsl.enable = true;
-    wsl.defaultUser = "user";
+    wsl.defaultUser = "nixos";
     system.stateVersion = "24.11";
 
     nix.extraOptions = ''
