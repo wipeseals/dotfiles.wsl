@@ -2,12 +2,19 @@
 
 ## Description
 
-My dotfiles for NixOS-WSL.
+My dotfiles for NixOS-WSL. They may be updated periodically.
 
 ## File Structure
 
 - `etc/nixos/`: NixOS configuration files
 - `test/`: flake test directory
+  - `test-cpp-meson-ninja`: C++ project with meson and ninja
+  - `test-cpp-meson-ninja-rv32`: C++ project with meson and ninja for RV32 cross compile
+  - `test-csharp`: C# Console project
+  - `test-deno/`: Deno project
+  - `test-python-uv` Python project with uv
+  - `test-rust`: Rust project
+  - `test-verilog`: Verilog project
 
 ## Install NixOS-WSL
 
