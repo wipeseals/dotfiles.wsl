@@ -1,5 +1,14 @@
 # dotfiles
 
+## Description
+
+My dotfiles for NixOS-WSL.
+
+## File Structure
+
+- `/etc/nixos/`: NixOS configuration files
+- `test/`: flake test directory
+
 ## Install NixOS-WSL
 
 ```bat
@@ -34,7 +43,7 @@ $ neofetch
 
 ## Install dotfiles
 
-dotfiles の取得
+### dotfiles の取得
 
 ```bash
 $ cd ~ && git clone https://github.com/wipeseals/dotfiles.git
@@ -44,27 +53,21 @@ $ git clone https://github.com/wipeseals/dotfiles.git /path/to/dotfiles
 $ ln -s /path/to/dotfiles/ ~
 ```
 
-`/etc/nixos/` の差し替え
+### `/etc/nixos/` の差し替え
 
-```bash
+````bash
 $ sudo rm -r /etc/nixos/
 $ sudo ln -s ~/dotfiles/etc/nixos/ /etc/nixos
-```
 
-### NixOS
-
-`/etc/nixos/configuration.nix` を差し替える。 configuration.nix を削除して、本リポジトリの configuration.nix をシンボリックリンクで置く
+### ビルド
 
 ```bash
-$ sudo rm /etc/nixos/configuration.nix
-$ sudo ln -s /full/path/to/dotfiles/configuration.nix /etc/nixos/configuration.nix
-
 # 初回だけはgitが必要. hotfix用にvimも持っておく
 $ sudo nix-shell -p git vim
 
 # nixos build. (以後 configuration.nix の変更後はこれで再ビルド)
 $ sudo nixos-rebuild switch
-```
+````
 
 ## Tips
 
