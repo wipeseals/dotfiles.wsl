@@ -22,10 +22,20 @@
 
     # shell/env tools
     starship # prompt
-    zellij # terminal multiplexer
     fish
     tmux # terminal multiplexer
     byobu # tmux wrapper
+
+    # alternative commands
+    bat # cat with wings
+    eza # ls with super powers
+    fd # find replacement
+    ripgrep # grep replacement
+    tokei # cloc replacement
+    dust # du replacement
+    procs # ps replacement
+    sd # sed replacement
+    zoxide # cd replacement
 
     # dev tools
     fzf # fuzzy finder
