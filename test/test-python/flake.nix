@@ -14,6 +14,7 @@
             packages = with pkgs; [
                 python312
                 python312.pkgs.uv
+                python312.pkgs.pytest                
             ];
         };
     };
