@@ -62,9 +62,10 @@ $ ln -s /path/to/dotfiles/ ~
 
 ### `/etc/nixos/` の差し替え
 
-````bash
+```bash
 $ sudo rm -r /etc/nixos/
 $ sudo ln -s ~/dotfiles/etc/nixos/ /etc/nixos
+```
 
 ### ビルド
 
