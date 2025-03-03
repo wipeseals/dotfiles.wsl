@@ -6,7 +6,7 @@ My dotfiles for NixOS-WSL.
 
 ## File Structure
 
-- `/etc/nixos/`: NixOS configuration files
+- `etc/nixos/`: NixOS configuration files
 - `test/`: flake test directory
 
 ## Install NixOS-WSL
