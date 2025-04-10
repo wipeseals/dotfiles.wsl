@@ -5,6 +5,14 @@
     username = "nixos";
     homeDirectory = "/home/nixos";
       packages = with pkgs; [
+        git
+        vim
+        curl
+        wget
+        zellij # terminal multiplexer
+        gh # github cli
+        lazygit # git tui
+        jq # json processor
     ];
     stateVersion = "24.11";
 

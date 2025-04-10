@@ -13,22 +13,11 @@
     };
   };
   environment.systemPackages = with pkgs; [
-    # must have tools
-    git
-    vim
-    curl
-    wget
     nix-ld-rs # https://github.com/nix-community/nix-ld
-
-    # shell/env tools
     starship # prompt
-    fish
-    zellij # terminal multiplexer
-    fzf # fuzzy finder
+    fish # shell
     direnv # environment variable manager
-    gh # github cli
-    lazygit # git tui
-    jq # json processor
+    fzf # fuzzy finder
   ];
 
   programs = {
