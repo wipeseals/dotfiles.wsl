@@ -24,20 +24,6 @@
     starship # prompt
     fish
     zellij # terminal multiplexer
-    neovim # text editor
-
-    # alternative commands
-    bat # cat with wings
-    eza # ls with super powers
-    fd # find replacement
-    ripgrep # grep replacement
-    tokei # cloc replacement
-    dust # du replacement
-    procs # ps replacement
-    sd # sed replacement
-    zoxide # cd replacement
-
-    # dev tools
     fzf # fuzzy finder
     direnv # environment variable manager
     gh # github cli
