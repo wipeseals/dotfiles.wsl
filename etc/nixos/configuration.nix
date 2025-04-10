@@ -23,8 +23,8 @@
     # shell/env tools
     starship # prompt
     fish
-    tmux # terminal multiplexer
-    byobu # tmux wrapper
+    zellij # terminal multiplexer
+    neovim # text editor
 
     # alternative commands
     bat # cat with wings
