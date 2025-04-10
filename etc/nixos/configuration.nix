@@ -18,6 +18,18 @@
     fish # shell
     direnv # environment variable manager
     fzf # fuzzy finder
+    vim
+    helix
+    curl
+    wget
+    zellij # terminal multiplexer
+    lazygit # git tui
+    jq # json processor
+    ripgrep # search tool
+    bat # cat replacement
+    fd # find replacement
+    eza # ls replacement
+    git # version control
   ];
 
   programs = {

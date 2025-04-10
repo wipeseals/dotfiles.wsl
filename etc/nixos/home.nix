@@ -2,23 +2,13 @@
 
 {
   home = {
+    stateVersion = "24.11";
     username = "nixos";
     homeDirectory = "/home/nixos";
-      packages = with pkgs; [
-        git
-        vim
-        curl
-        wget
-        zellij # terminal multiplexer
-        gh # github cli
-        lazygit # git tui
-        jq # json processor
+    packages = with pkgs; [
+      git
+      gh # github cli
     ];
-    stateVersion = "24.11";
-
-    file = {
-      # ".config".source = ./.config;
-    };
   };
 
   programs = {
@@ -30,7 +20,7 @@
     };
     gh = {
       enable = true;
-      settings.editor = "vim";
+      settings.editor = "helix";
     };
   };
 }
