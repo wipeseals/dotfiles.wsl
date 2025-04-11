@@ -20,7 +20,7 @@
     };
     gh = {
       enable = true;
-      settings.editor = "helix";
+      settings.editor = "hx";
     };
   };
 }
