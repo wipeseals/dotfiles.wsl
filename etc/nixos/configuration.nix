@@ -12,6 +12,8 @@
       options = "--delete-older-than 6d";
     };
   };
+
+  boot.kernelModules = [ "nvme-fabrics" "nvme-tcp" ];
   environment.systemPackages = with pkgs; [
     nix-ld-rs # https://github.com/nix-community/nix-ld
     starship # prompt
